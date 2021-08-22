@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutProgramRegimVegetrian"
+    tools:context=".ProgrammeVegeterian">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/reg8"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="120dp" />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="120dp"
+            android:text="@string/le_pesco_v_g_tarien"
+            android:layout_marginStart="120dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-30dp"
+            android:text="@string/n_exclut_que_la_viande_il_autorise_le_poisson_les_ufs_et_les_produits_laitiers"
+            android:layout_marginStart="50dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/reg9"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="80dp"
+            android:text="@string/l_ovo_v_g_tarien"
+            android:layout_marginStart="80dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/exclut_tous_les_produits_animaux_sauf_les_ufs"
+            android:layout_marginStart="50dp" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/reg10"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="@string/le_lacto_v_g_tarien"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/exclut_les_produits_animaux_y_compris_les_ufs_mais_autorise_les_laitages"
+            android:layout_marginStart="50dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+

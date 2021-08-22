@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutProgrammeDetox"
+    tools:context=".ProgrammeDetox">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-240dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/imo10"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-280dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="@string/la_betterave"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/la_betterave_renferme_de_la_m_thionine_qui_aide_le_corps_traiter_les_d_chets_de_l_organisme_et_de_la_b_tanine_qui_aide_le_foie_m_taboliser_les_acides_gras"
+            android:layout_marginStart="20dp" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/pvr"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="120dp" />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-50dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="@string/la_pomme"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/la_pomme_contient_de_la_pectine_une_fibre_qui_permet_l_excr_tion_des_toxines_et_gonfle_dans_l_estomac_au_contact_des_liquides_s_y_trouvant_ce_qui_contribue_au_sentiment_de_sati_t"
+            android:layout_marginStart="20dp" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/imo22"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/le_tefou_riche_en_prot_ines_v_g_tales_le_tofu_peut_remplacer_la_viande_pendant_la_cure_de_d_tox_il_rassasie_rapidement_am_liore_la_digestion_et_aide_l_organisme_excr_ter_ses_toxines"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

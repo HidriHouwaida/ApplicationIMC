@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutRegimeAnticholoestrol"
+    tools:context=".RegimeSansCholosterol">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-200dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/reg11"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="-150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/un_r_gime_antichol_strole_consiste_a_viter_la_consomation_des_aliments_pleins_de_chol_sterol"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/programme_alimentaire"
+            android:textStyle="bold"
+            android:id="@+id/regimanticholosterol"
+            android:backgroundTint="#997A8D"
+            android:layout_marginStart="100dp"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

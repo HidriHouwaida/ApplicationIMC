@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutRegimeVegeterian"
+    tools:context=".RegimeVegeterian">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-200dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/regimvege"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="-150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/le_r_gime_v_g_talien_ou_alimentation_v_gane_consiste_liminer_tous_les_aliments_d_origine_animale_viande_poisson_crustac_s_mais_aussi_la_diff_rence_du_r_gime_v_g_tarien_les_oeufs_les_produits_laitiers_et_le_miel_il_est_surtout_pratiqu_pour_des_raisons_thiques_de_sant_et_cologiques_par_d_finition_le_r_gime_v_g_talien_est_un_mode_de_vie_plus_qu_un_r_gime"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/programme_alimentaire"
+            android:textStyle="bold"
+            android:id="@+id/regimvegeterian"
+            android:backgroundTint="#997A8D"
+            android:layout_marginStart="100dp"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

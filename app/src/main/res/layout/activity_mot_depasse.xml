@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotDepasse">
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="40dp"
+        android:hint="@string/email"
+        android:id="@+id/email"
+        android:autofillHints=""
+        android:layout_marginStart="40dp"
+        android:inputType="text"
+        tools:ignore="TextFields" />
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="-350dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/envoyermonmotdepasse"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/passe"
+        android:layout_marginStart="-350dp" />
+</LinearLayout>

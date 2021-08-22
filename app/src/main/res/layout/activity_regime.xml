@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutRegime"
+    tools:context=".Regime">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/r_gime_alimentaire"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/regime"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="50dp"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-70dp"
+            android:text="@string/un_r_gime_alimentaire_se_d_finit_quantativement_par_le_nombre_total_de_calorie_et_par_le_pourcentage_de_calorie_provenant_de_trois_lement_fondamentaux_glucides_lipides_et_protides"
+            android:layout_marginStart="50dp" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FDE9E0"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:text="@string/choisir_un_type"
+            android:textStyle="bold"
+            android:id="@+id/choix"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:targetApi="lollipop"
+            android:layout_marginStart="100dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:layout_marginStart="100dp">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

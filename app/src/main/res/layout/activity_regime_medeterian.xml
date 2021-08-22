@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutRegimeMediterian"
+    tools:context=".RegimeMedeterian">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/regimemedi"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="-150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/le_r_gime_m_diterran_en_galement_appel_r_gime_cr_tois_ou_di_te_m_diterran_enne_est_caract_ris_e_par_la_consommation_en_abondance_de_fruits_l_gumes_l_gumineuses_c_r_ales_herbes_aromatiques_et_d_huile_d_olive_une_consommation_mod_r_e_de_produits_laitiers_d_origine_vari_e_ch_vre_et_brebis_essentiellement_et_issus_de_la_vache_dans_une_moindre_mesure_d_ufs_et_de_vin_une_consommation_limit_e_de_poisson_et_une_consommation_faible_de_viande"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/programme_alimentaire"
+            android:textStyle="bold"
+            android:id="@+id/regimmediterian"
+            android:backgroundTint="#997A8D"
+            android:layout_marginStart="100dp"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

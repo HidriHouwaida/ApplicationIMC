@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutRegimeDetox"
+    tools:context=".RegimeDetox">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/detox"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/un_r_gime_d_tox_est_un_type_de_traitement_de_m_decine_alternative_qui_vise_d_barrasser_le_corps_des_toxines_non_sp_cifi_es_substances_qui_selon_les_promoteurs_se_sont_accumul_es_dans_le_corps_et_ont_des_effets_ind_sirables_court_ou_long_terme_sur_la_sant_individuelle"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/programme_alimentaire"
+            android:textStyle="bold"
+            android:id="@+id/regimdetox"
+            android:backgroundTint="#997A8D"
+            android:layout_marginStart="100dp"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgrammeMedeterian"
+    android:id="@+id/drawer_layoutProgramRegimMedeterian"><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/main_toolbar"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/im1regimmedeterian"
+        android:layout_marginTop="-300dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/todo"
+        android:layout_marginStart="20dp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/im2regimmedetrian"
+        android:layout_marginTop="-930dp"
+        android:layout_marginLeft="250dp"
+        android:contentDescription="@string/todo"
+        android:layout_marginStart="250dp" />
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/salade_de_poulet_grille_et_legumes"
+        android:textColor="@color/black"
+        android:layout_marginTop="-320dp"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:text="@string/salade_grecque_de_tomates_avocats_et_crevettes"
+        android:textColor="@color/black"
+        android:layout_marginTop="-100dp"
+        android:layout_marginStart="250dp" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/im5regimmedeterian"
+        android:contentDescription="@string/todo"
+        android:layout_marginStart="20dp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-150dp"
+        android:src="@drawable/im6regimemdeterian"
+        android:contentDescription="@string/todo"
+        android:layout_marginStart="250dp" />
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="@string/poisson_roti_a_la_mediterraneenne"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-40dp"
+        android:textColor="@color/black"
+        android:text="@string/brochettes_de_pasteque_et_halloumi"
+        android:layout_marginStart="250dp" />
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

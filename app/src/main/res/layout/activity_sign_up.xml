@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutSiginUp"
+    android:background="@drawable/back"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#01D758"
+            android:textStyle="bold"
+            android:text="@string/cr_er_un_compte"
+            android:layout_marginStart="60dp" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:id="@+id/nom"
+            android:text="@string/nom"
+            android:layout_marginStart="70dp" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_marginTop="-15dp"
+            android:autofillHints=""
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:layout_marginStart="70dp" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textSize="16sp"
+            android:text="@string/pr_nom"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="70dp" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="-15dp"
+            android:autofillHints=""
+            android:inputType="text"
+            android:layout_marginStart="70dp"
+            tools:ignore="LabelFor" />
+        <TextView
+
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textSize="16sp"
+            android:text="@string/ann_e_de_naissance"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="70dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/im1"
+            android:id="@+id/imageage"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="70dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="200dp"
+            android:text="@string/_1995"
+            android:id="@+id/age"
+            android:autofillHints=""
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:layout_marginStart="200dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/black"
+            android:layout_marginStart="70dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:backgroundTint="#00000000"
+                android:id="@+id/Email"
+                tools:ignore="UnusedAttribute" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!---le textinput de mot de passe-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:passwordToggleEnabled="false"
+            android:textColorHint="@color/black"
+            android:layout_marginStart="70dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType = "textPassword"
+                android:backgroundTint="#00000000"
+                android:id="@+id/Password"
+                android:hint="@string/mot_de_passe"
+                tools:ignore="UnusedAttribute" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#FF03DAC5"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/registre"
+            android:textSize="20sp"
+            android:text="@string/cr_er"
+            android:layout_marginStart="70dp"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

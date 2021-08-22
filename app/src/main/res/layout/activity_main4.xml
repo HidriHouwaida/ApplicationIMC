@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/imformation2"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/poids_normal"
+            android:textSize="20sp"
+            android:textColor="#FFE4C4"
+            android:layout_marginLeft="9dp"
+            android:textStyle="bold"
+            android:layout_marginStart="9dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="9dp"
+            android:textColor="@color/black"
+            android:text="@string/votre_poids_est_adapt_votre_taille_gardez_vos_habitudes_alimentaires_pour_conserver_un_indice_de_masse_corporel_imc_id_al_et_un_poids_qui_vous_assure_un_tat_de_sant_optimal_une_alimentation_quilibr_e_sans_exc_s_de_mati_res_grasses_associ_e_une_activit_physique_r_guli_re_vous_aideront_maintenir_votre_poids_id_al"
+            android:layout_marginStart="9dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
