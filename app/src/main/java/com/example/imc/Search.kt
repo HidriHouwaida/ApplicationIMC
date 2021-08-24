@@ -1,5 +1,6 @@
 package com.example.imc
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -9,12 +10,13 @@ import kotlinx.android.synthetic.main.main_nav_drawer.*
 import kotlinx.android.synthetic.main.main_toolbar.*
 
 class Search : AppCompatActivity() {
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
         home.setOnClickListener()
         {
-            val gameactivity: Intent = Intent(this@Search,MainActivity::class.java)
+            val gameactivity = Intent(this@Search,MainActivity::class.java)
             startActivity(gameactivity)
         }
         men.setOnClickListener()
@@ -23,15 +25,11 @@ class Search : AppCompatActivity() {
         }
         log.setOnClickListener()
         {
-            val gameactivity: Intent = Intent(this@Search,SiginIn::class.java)
+            val gameactivity = Intent(this@Search,SiginIn::class.java)
             startActivity(gameactivity)
         }
 
-        set.setOnClickListener()
-        {
-            val g: Intent = Intent(this@Search,Setting::class.java)
-            startActivity(g)
-        }
+
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)
@@ -40,13 +38,13 @@ class Search : AppCompatActivity() {
             val sub = "http://play.google.com"
             intent.putExtra(Intent.EXTRA_TEXT, body)
             intent.putExtra(Intent.EXTRA_TEXT, sub)
-            startActivity(Intent.createChooser(intent, "SharaVia"))
+            startActivity(Intent.createChooser(intent, "Partager avec "))
         }
         about.setOnClickListener()
         {
-            val g: Intent = Intent(this@Search,AboutUs::class.java)
+            val g = Intent(this@Search,AboutUs::class.java)
             startActivity(g)}
-        var texte=item.text
+        val texte=item.text
         chercher.setOnClickListener()
         {if(edittext.text.toString()=="Poids")
         {

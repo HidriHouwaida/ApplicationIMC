@@ -21,11 +21,7 @@ class RegimeVegeterian : AppCompatActivity() {
         {
             val g = Intent(this@RegimeVegeterian,AboutUs::class.java)
             startActivity(g)}
-        set.setOnClickListener()
-        {
-            val g = Intent(this@RegimeVegeterian,Setting::class.java)
-            startActivity(g)
-        }
+
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)
@@ -34,7 +30,7 @@ class RegimeVegeterian : AppCompatActivity() {
             val sub = "http://play.google.com"
             intent.putExtra(Intent.EXTRA_TEXT, body)
             intent.putExtra(Intent.EXTRA_TEXT, sub)
-            startActivity(Intent.createChooser(intent, "SharaVia"))
+            startActivity(Intent.createChooser(intent, "Partager avec"))
         }
         srch.setOnClickListener()
         {

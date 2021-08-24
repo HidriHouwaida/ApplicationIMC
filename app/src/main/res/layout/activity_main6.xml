@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layoutmain6"
     tools:context=".MainActivity6">
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,24 +37,30 @@
             android:contentDescription="@string/todo"
             android:layout_marginStart="220dp" />
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/imc_30_ob_sit"
             android:textSize="20sp"
             android:textColor="#FFE4C4"
-            android:layout_marginLeft="9dp"
+            android:layout_marginLeft="100dp"
             android:textStyle="bold"
-            android:layout_marginStart="9dp" />
+            android:layout_marginStart="100dp" />
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bn"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="500dp"
-            android:textSize="20sp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="9dp"
-            android:textColor="@color/black"
             android:text="@string/votre_poids_est_trop_lev_par_rapport_votre_taille_du_point_de_vue_m_dical_l_ob_sit_est_un_exc_s_de_masse_grasse_ayant_des_cons_quences_sur_la_sant_l_exc_s_de_poids_entra_ne_un_risque_accru_de_maladies_m_taboliques_diab_te_cardiaques_respiratoires_articulaires_et_de_cancer"
             android:layout_marginStart="9dp" />
-
+        </RelativeLayout>
     </LinearLayout>
     <RelativeLayout
         android:layout_width="300dp"

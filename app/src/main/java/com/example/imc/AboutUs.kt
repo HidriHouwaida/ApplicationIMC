@@ -31,11 +31,7 @@ class AboutUs : AppCompatActivity() {
             val gameactivity = Intent(this@AboutUs,MainActivity::class.java)
             startActivity(gameactivity)
         }
-        set.setOnClickListener()
-        {
-            val g = Intent(this@AboutUs,Setting::class.java)
-            startActivity(g)
-        }
+
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)

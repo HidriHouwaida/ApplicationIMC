@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layoutmain4"
     tools:context=".MainActivity4">
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,24 +20,30 @@
             android:src="@drawable/imformation2"
             android:contentDescription="@string/todo" />
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="@string/poids_normal"
             android:textSize="20sp"
             android:textColor="#FFE4C4"
-            android:layout_marginLeft="9dp"
+            android:layout_marginLeft="110dp"
             android:textStyle="bold"
-            android:layout_marginStart="9dp" />
+            android:layout_marginStart="110dp" />
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bn"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:layout_marginTop="20dp"
-            android:textSize="20sp"
             android:layout_marginLeft="9dp"
-            android:textColor="@color/black"
             android:text="@string/votre_poids_est_adapt_votre_taille_gardez_vos_habitudes_alimentaires_pour_conserver_un_indice_de_masse_corporel_imc_id_al_et_un_poids_qui_vous_assure_un_tat_de_sant_optimal_une_alimentation_quilibr_e_sans_exc_s_de_mati_res_grasses_associ_e_une_activit_physique_r_guli_re_vous_aideront_maintenir_votre_poids_id_al"
             android:layout_marginStart="9dp" />
+        </RelativeLayout>
     </LinearLayout>
     <RelativeLayout
         android:layout_width="300dp"

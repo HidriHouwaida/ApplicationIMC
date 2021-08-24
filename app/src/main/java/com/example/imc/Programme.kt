@@ -26,6 +26,11 @@ class Programme : AppCompatActivity() {
             val gameactivity = Intent(this@Programme,IMC::class.java)
             startActivity(gameactivity)
         }
+        sport.setOnClickListener()
+        {
+            val gameactivity = Intent(this@Programme,ExerciceSport::class.java)
+            startActivity(gameactivity)
+        }
         home.setOnClickListener()
         {
             val gameactivity = Intent(this@Programme,MainActivity::class.java)
@@ -44,7 +49,7 @@ class Programme : AppCompatActivity() {
             val sub = "http://play.google.com"
             intent.putExtra(Intent.EXTRA_TEXT, body)
             intent.putExtra(Intent.EXTRA_TEXT, sub)
-            startActivity(Intent.createChooser(intent, "SharaVia"))
+            startActivity(Intent.createChooser(intent, "Partager avec"))
         }
         logout.setOnClickListener()
         {

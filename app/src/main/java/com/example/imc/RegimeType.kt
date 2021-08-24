@@ -48,11 +48,7 @@ class RegimeType : AppCompatActivity() {
             startActivity(gameactivity)
         }
 
-        set.setOnClickListener()
-        {
-            val g = Intent(this@RegimeType,Setting::class.java)
-            startActivity(g)
-        }
+
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)
@@ -61,7 +57,7 @@ class RegimeType : AppCompatActivity() {
             val sub = "http://play.google.com"
             intent.putExtra(Intent.EXTRA_TEXT, body)
             intent.putExtra(Intent.EXTRA_TEXT, sub)
-            startActivity(Intent.createChooser(intent, "SharaVia"))
+            startActivity(Intent.createChooser(intent, "Partager avec"))
         }
         logout.setOnClickListener()
         {

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutchronometre"
+    tools:context=".Chronometre">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/chronometre"
+            android:layout_marginStart="50dp"
+            android:contentDescription="@string/todo" />
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bk"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp">
+            <Chronometer
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:textSize="50sp"
+                android:id="@+id/chronometre"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="70dp" />
+        </RelativeLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/lancement"
+            android:id="@+id/button1"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginStart="100dp" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/pause"
+            android:id="@+id/button2"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginStart="100dp" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/r_initialiser"
+            android:id="@+id/button3"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginStart="100dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

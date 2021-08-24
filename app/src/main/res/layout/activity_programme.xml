@@ -32,7 +32,16 @@
             android:id="@+id/regime"
             android:text="@string/r_gime"
             android:layout_marginStart="100dp" />
-
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="30sp"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold"
+            android:id="@+id/sport"
+            android:text="@string/sport"
+            android:layout_marginStart="100dp" />
     </LinearLayout>
     <RelativeLayout
         android:layout_width="300dp"

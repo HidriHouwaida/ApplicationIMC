@@ -14,12 +14,23 @@ class calculpoid : AppCompatActivity() {
         setContentView(R.layout.activity_calculpoid)
         button.setOnClickListener()
         {
-            val t=taille.text.toString()
+            if(taille.text.toString().isEmpty())
+            {
+                taille.setError("Taille obligatoire!")
+                taille.requestFocus()
+            }
+            else if(poid.text.toString().isEmpty())
+            {
+                poid.setError("Poid obligatoire!")
+                poid.requestFocus()
+            }
+            else
+            {val t=taille.text.toString()
             val p=poid.text.toString()
             val gameActivity = Intent( this@calculpoid,caluculimc::class.java)
             gameActivity.putExtra("poid", p)
             gameActivity.putExtra("taille", t)
-            startActivity(gameActivity)
+            startActivity(gameActivity)}
 
 
 
@@ -46,11 +57,6 @@ class calculpoid : AppCompatActivity() {
             startActivity(g)
         }
 
-        set.setOnClickListener()
-        {
-            val g = Intent(this@calculpoid,Setting::class.java)
-            startActivity(g)
-        }
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)
@@ -59,7 +65,7 @@ class calculpoid : AppCompatActivity() {
             val sub = "http://play.google.com"
             intent.putExtra(Intent.EXTRA_TEXT, body)
             intent.putExtra(Intent.EXTRA_TEXT, sub)
-            startActivity(Intent.createChooser(intent, "ShareVia"))
+            startActivity(Intent.createChooser(intent, "Partager avec"))
         }
         srch.setOnClickListener()
         {

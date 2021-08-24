@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutExercicemusculation"
+    tools:context=".exercicemusculation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/main_toolbar"
+            />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/musculation"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/musculation"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/exemple_des_exercices"
+            android:textStyle="bold"
+            android:id="@+id/exempledesexercice"
+            android:backgroundTint="#997A8D"
+            android:layout_marginStart="100dp"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

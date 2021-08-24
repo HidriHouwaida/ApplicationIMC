@@ -5,13 +5,22 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
-        android:icon="@drawable/logoimc"
-        android:label="@string/app_name"
+        android:icon="@drawable/k"
+        android:label="Keep Your Health"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IMC">
-        <activity android:name=".Calendrier"></activity>
+        <activity android:name=".Chronometre" />
+        <activity android:name=".exercicecourse" />
+        <activity android:name=".exercicetirement" />
+        <activity android:name=".exercicequilibre" />
+        <activity android:name=".Exempleexercicemusculation" />
+        <activity android:name=".exercicemusculation" />
+        <activity android:name=".Exempleexercicecardio" />
+        <activity android:name=".ExerciceCardiovasculaire" />
+        <activity android:name=".ExerciceSport" />
+        <activity android:name=".MenuSport" />
+        <activity android:name=".Calendrier" />
         <activity android:name=".MotDepasse" />
         <activity android:name=".MainActivity6" />
         <activity android:name=".MainActivity5" />
@@ -31,12 +40,9 @@
         <activity android:name=".RegimeSansSel" />
         <activity android:name=".RegimeDash" />
         <activity android:name=".ProgrammeDah" />
-        <activity android:name=".Share" />
-        <activity android:name=".Setting" />
         <activity android:name=".AboutUs" />
         <activity android:name=".Search" />
         <activity android:name=".Lougout" />
-        <activity android:name=".Home" />
         <activity android:name=".RegimeType" />
         <activity android:name=".Regime" />
         <activity android:name=".IMC" />

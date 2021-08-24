@@ -20,13 +20,22 @@
             android:src="@drawable/regimvege"
             android:contentDescription="@string/todo"
             android:layout_marginStart="50dp" />
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="-180dp"
+           android:layout_marginLeft="20dp"
+            android:background="@drawable/bk"
+            android:layout_marginStart="20dp">
         <TextView
             android:layout_width="match_parent"
-            android:layout_marginTop="-150dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_height="wrap_content"
             android:text="@string/le_r_gime_v_g_talien_ou_alimentation_v_gane_consiste_liminer_tous_les_aliments_d_origine_animale_viande_poisson_crustac_s_mais_aussi_la_diff_rence_du_r_gime_v_g_tarien_les_oeufs_les_produits_laitiers_et_le_miel_il_est_surtout_pratiqu_pour_des_raisons_thiques_de_sant_et_cologiques_par_d_finition_le_r_gime_v_g_talien_est_un_mode_de_vie_plus_qu_un_r_gime"
             android:layout_marginStart="20dp" />
+        </RelativeLayout>
         <Button
             android:layout_width="200dp"
             android:layout_height="wrap_content"

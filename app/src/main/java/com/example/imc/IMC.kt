@@ -23,11 +23,7 @@ class IMC : AppCompatActivity() {
         }
 
 
-        set.setOnClickListener()
-        {
-            val g = Intent(this@IMC,Setting::class.java)
-            startActivity(g)
-        }
+
         logout.setOnClickListener()
         {
             val g = Intent(this@IMC,Lougout::class.java)
@@ -57,6 +53,7 @@ class IMC : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, sub)
             startActivity(Intent.createChooser(intent, "Patager avec"))
         }
+
 
     }
 }

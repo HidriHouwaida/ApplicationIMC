@@ -21,20 +21,11 @@ class MainActivity : AppCompatActivity() {
             val gameactivity = Intent(this@MainActivity,SiginIn::class.java)
             startActivity(gameactivity)
         }
-        logout.setOnClickListener()
-        {
-            val g =Intent(this@MainActivity,Lougout::class.java)
-            startActivity(g)
-        }
         about.setOnClickListener()
         {
             val g =Intent(this@MainActivity,AboutUs::class.java)
             startActivity(g)}
-        set.setOnClickListener()
-        {
-            val g =Intent(this@MainActivity,Setting::class.java)
-            startActivity(g)
-        }
+
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)

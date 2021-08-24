@@ -67,11 +67,7 @@ class SiginIn : AppCompatActivity() {
         {
             val g =Intent(this@SiginIn,AboutUs::class.java)
             startActivity(g)}
-        set.setOnClickListener()
-        {
-            val g =Intent(this@SiginIn,Setting::class.java)
-            startActivity(g)
-        }
+
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)

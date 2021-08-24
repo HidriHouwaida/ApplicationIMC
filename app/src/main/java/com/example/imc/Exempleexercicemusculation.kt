@@ -2,32 +2,25 @@ package com.example.imc
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.SwitchCompat
 import androidx.core.view.GravityCompat
-import kotlinx.android.synthetic.main.activity_setting.*
+import kotlinx.android.synthetic.main.activity_exempleexercicemusculation.*
 import kotlinx.android.synthetic.main.main_nav_drawer.*
 import kotlinx.android.synthetic.main.main_toolbar.*
 
-class Setting : AppCompatActivity() {
+class Exempleexercicemusculation : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_setting)
+        setContentView(R.layout.activity_exempleexercicemusculation)
         home.setOnClickListener()
         {
-            val gameactivity: Intent = Intent(this@Setting,MainActivity::class.java)
+            val gameactivity = Intent(this@Exempleexercicemusculation,MainActivity::class.java)
             startActivity(gameactivity)
         }
         men.setOnClickListener()
         {
-            drawer_layout8.openDrawer(GravityCompat.START)
+            drawer_layoutexempleExercicemusculation.openDrawer(GravityCompat.START)
         }
-
-        srch.setOnClickListener()
-        {
-            val g: Intent = Intent(this@Setting,Search::class.java)
-            startActivity(g)}
 
         shar.setOnClickListener()
         {
@@ -37,16 +30,20 @@ class Setting : AppCompatActivity() {
             val sub = "http://play.google.com"
             intent.putExtra(Intent.EXTRA_TEXT, body)
             intent.putExtra(Intent.EXTRA_TEXT, sub)
-            startActivity(Intent.createChooser(intent, "SharaVia"))
+            startActivity(Intent.createChooser(intent, "Partager avec"))
         }
         logout.setOnClickListener()
         {
-            val g: Intent = Intent(this@Setting,Lougout::class.java)
+            val g = Intent(this@Exempleexercicemusculation,Lougout::class.java)
             startActivity(g)
         }
+        srch.setOnClickListener()
+        {
+            val g = Intent(this@Exempleexercicemusculation,Search::class.java)
+            startActivity(g)}
         about.setOnClickListener()
         {
-            val g: Intent = Intent(this@Setting,AboutUs::class.java)
+            val g =Intent(this@Exempleexercicemusculation,AboutUs::class.java)
             startActivity(g)}
     }
 }

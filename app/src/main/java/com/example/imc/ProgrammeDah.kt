@@ -25,11 +25,7 @@ class ProgrammeDah : AppCompatActivity() {
         {
             val g = Intent(this@ProgrammeDah,AboutUs::class.java)
             startActivity(g)}
-        set.setOnClickListener()
-        {
-            val g = Intent(this@ProgrammeDah,Setting::class.java)
-            startActivity(g)
-        }
+
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)
@@ -38,7 +34,7 @@ class ProgrammeDah : AppCompatActivity() {
             val sub = "http://play.google.com"
             intent.putExtra(Intent.EXTRA_TEXT, body)
             intent.putExtra(Intent.EXTRA_TEXT, sub)
-            startActivity(Intent.createChooser(intent, "SharaVia"))
+            startActivity(Intent.createChooser(intent, "Partager avec"))
         }
         srch.setOnClickListener()
         {

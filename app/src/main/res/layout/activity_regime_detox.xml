@@ -20,18 +20,26 @@
             android:src="@drawable/detox"
             android:contentDescription="@string/todo"
             android:layout_marginStart="50dp" />
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bk"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp">
         <TextView
             android:layout_width="match_parent"
-            android:layout_marginTop="-50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
             android:text="@string/un_r_gime_d_tox_est_un_type_de_traitement_de_m_decine_alternative_qui_vise_d_barrasser_le_corps_des_toxines_non_sp_cifi_es_substances_qui_selon_les_promoteurs_se_sont_accumul_es_dans_le_corps_et_ont_des_effets_ind_sirables_court_ou_long_terme_sur_la_sant_individuelle"
             android:layout_marginStart="20dp" />
+        </RelativeLayout>
         <Button
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:text="@string/programme_alimentaire"
             android:textStyle="bold"
             android:id="@+id/regimdetox"

@@ -76,11 +76,6 @@ class caluculimc : AppCompatActivity() {
             startActivity(g)
         }
 
-        set.setOnClickListener()
-        {
-            val g = Intent(this@caluculimc,Setting::class.java)
-            startActivity(g)
-        }
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)
@@ -91,5 +86,13 @@ class caluculimc : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, sub)
             startActivity(Intent.createChooser(intent, "Partager avec"))
         }
+        srch.setOnClickListener()
+        {
+            val g = Intent(this@caluculimc,Search::class.java)
+            startActivity(g)}
+        about.setOnClickListener()
+        {
+            val g =Intent(this@caluculimc,AboutUs::class.java)
+            startActivity(g)}
     }
 }

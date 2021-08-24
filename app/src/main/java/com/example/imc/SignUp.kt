@@ -83,11 +83,7 @@ class SignUp : AppCompatActivity() {
             startActivity(gameactivity)
         }
 
-        set.setOnClickListener()
-        {
-            val g = Intent(this@SignUp,Setting::class.java)
-            startActivity(g)
-        }
+
         shar.setOnClickListener()
         {
             val intent = Intent(Intent.ACTION_SEND)
