@@ -88,7 +88,7 @@
     <string name="effa_er">Effaçer</string>
     <string name="about_us">About Us</string>
     <string name="dictionnaire">********__Poids__******** ********__Taille__********    ********__IMC__********  **__Alimentation équilibré__** **__Matiére grasses__** ********__Poids idéal__******** ********__Obésité__******** **__Maladies métaboliques__** ********__Pathalogie__********</string>
-    <string name="info">IMC est une application créer pour vous aide à être informar sur l\'état de votre poids, il vous donne aussi des conseils, des certains types de régimes et des certains types des exercices sportifs, pour vos restes en bonne santé et forme</string>
+    <string name="info">Keep your health est une application créer pour vous aide à être informar sur l\'état de votre poids, il vous donne aussi des conseils, des certains types de régimes et des certains types des exercices sportifs, pour vos restes en bonne santé et forme</string>
     <string name="sport">Sport</string>
     <string name="spor">un sport est une activité physique régie par des règles, qui peut être soit individuelle, soit collective, quand Pierre de Coubertin considérait que “Le sport va chercher la peur pour la dominer, la fatigue pour en triompher, la difficulté pour la vaincre”.</string>
     <string name="voir_les_types_des_sports">Voir les types des sports</string>
@@ -119,4 +119,5 @@
     <string name="lancement">Lancement</string>
     <string name="pause">Pause</string>
     <string name="r_initialiser">réinitialiser</string>
+    <string name="keep_your_health">Keep Your Health</string>
 </resources>
